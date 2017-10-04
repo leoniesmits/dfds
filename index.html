@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://use.fontawesome.com/e41dfdb918.js"></script>
+    <title>Overzichtspagina</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+    <div>
+      <a href="index.html">
+      <img src="/dfds/images/dfdslogo.png" alt="DFDS logo"><p>Reisverhalen</p>
+      </a>
+    </div>
+    <ul id="inlogmenu">
+      <li><a href="inloggen.html#login">Inloggen</a></li><li><a href="inloggen.html#login"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <header>
+    <form class="zoekContainer">
+        <div id="zoekBalk">
+            <div id="searchQueryContainer">
+            </div>
+            <input type="search" name="search" id="search">
+            <div class="zoekIcoon"></div>
+        </div>
+    </form>
+    <video playsinline autoplay muted loop poster id="golven">
+    <source src="videos/ocean.mp4" type="video/mp4">
+    </video>
+
+ 
+    </header>
+      <div class="zoekmenu ingeklapt">
+           <form id="checkboxmenu">
+            <fieldset>
+                <legend>Categorie</legend>
+                <label for="categoriestemming">Stemming
+                    <input type="checkbox" value="Stemming" name="Stemming" id="categoriestemming">
+                    <span></span>
+                </label>
+                <label for="categoriepersoon">Persoon
+                    <input type="checkbox" name="Persoon" id="categoriepersoon">
+                    <span></span>
+                </label>
+                <label for="categorieartistiek">Artistiek
+                    <input type="checkbox" name="Artistiek" id="categorieartistiek">
+                    <span></span>
+                </label>
+                <label for="categoriewereldbeeld">Wereldbeeld
+                    <input type="checkbox" name="Wereldbeeld" id="categoriewereldbeeld">
+                    <span></span>
+                </label>
+                <label for="categoriewoordenspel">Woordenspel
+                    <input type="checkbox" name="Woordenspel" id="categoriewoordenspel">
+                    <span></span>
+                </label>
+                <label for="categoriesituatie">Situatie
+                    <input type="checkbox" name="Situatie" id="categoriesituatie">
+                    <span></span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Gelezen</legend>
+                <label for="nognietgelezen">Nog niet gelezen
+                    <input type="checkbox" name="Nog niet gelezen" id="nognietgelezen">
+                    <span></span>
+                </label>
+                <label for="verderlezen">Verder Lezen
+                    <input type="checkbox" name="Verder lezen" id="verderlezen">
+                    <span></span>
+                </label>
+                <label for="algelezen">Al gelezen
+                    <input type="checkbox" name="Al gelezen" id="algelezen">
+                    <span></span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Leestijd</legend>
+                <label for="leestijdmin3">< 2 minuten
+                    <input type="checkbox" name="< 2 minuten" id="leestijdmin3">
+                    <span></span>
+                </label>
+                <label for="leestijd36">2 - 6 minuten
+                    <input type="checkbox" name="2 - 6 minuten" id="leestijd36">
+                    <span></span>
+                </label>
+                <label for="leestijd610">6 - 10
+                    <input type="checkbox" name="6 - 10 minuten" id="leestijd610">
+                    <span></span>
+                </label>
+                <label for="leestijdplus10">10 >
+                    <input type="checkbox" name="10 > minuten" id="leestijdplus10">
+                    <span></span>
+                </label>
+            </fieldset>
+            </form>
+            <div class="menuweg"></div>
+            </div>
+            <form class="sorteerform">
+        <span>Sorteer op</span>
+        <select>
+          <option>Nieuwste</option>
+          <option>Meest gelezen</option>
+          <option>Best beoordeeld</option>
+        </select>
+      </form>
+      <section>
+      <h1>Aanbevolen voor jou</h1>
+      <p>vanwege je belangstelling voor <b>Haiku</b></p>
+      <article>
+      <div class="categorielabel">Woordenspel</div>
+      <img src="images/alliteratiegrond.svg">
+      <div class="opslaan"></div>
+      <h2><a href="./alliteratie.html">Alliteratie</a></h2>
+      <p>18 januari 2016</p>
+
+      <p>De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen.</p>
+      <div>
+      <span><i class="fa fa-clock-o" aria-hidden="true"></i>5 min</span><span><i class="fa fa-heart" aria-hidden="true"></i>8</span>
+      </div>
+      </article>
+      <h1>6 resultaten</h1>
+      <article>
+      <div class="categorielabel">Persoon</div>
+      <img src="images/verwardemangrond.svg">
+      <div class="opslaan"></div>
+      <h2><a href="./verwardeman.html">De Verwarde Man</a></h2>
+      <p>18 januari 2016</p>
+
+      <p>De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen.</p>
+      <div>
+      <span><i class="fa fa-clock-o" aria-hidden="true"></i>5 min</span><span><i class="fa fa-heart" aria-hidden="true"></i>8</span>
+      </div>
+      </article>
+            <article>
+      <div class="categorielabel">Situatie</div>
+      <img src="images/droomgrond.svg">
+      <div class="opslaan"></div>
+      <h2><a href="./droom.html">Droom</a></h2>
+      <p>18 januari 2016</p>
+
+      <p>De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen.</p>
+      <div>
+      <span><i class="fa fa-clock-o" aria-hidden="true"></i>5 min</span><span><i class="fa fa-heart" aria-hidden="true"></i>8</span>
+      </div>
+      </article>
+            <article>
+              <div class="categorielabel">Wereldbeeld</div>
+              <img src="images/westerngrond.svg">
+              <div class="opslaan"></div>
+              <h2>Western</h2>
+              <p>18 januari 2016</p>
+
+              <p>De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen.</p>
+              <div>
+              <span><i class="fa fa-clock-o" aria-hidden="true"></i>5 min</span><span><i class="fa fa-heart" aria-hidden="true"></i>8</span>
+              </div>
+      </article>
+      
+            <article>
+              <div class="categorielabel">Stemming</div>
+              <img src="images/neerslachtiggrond.svg">
+              <div class="opslaan"></div>
+              <h2>Neerslachtig</h2>
+              <p>18 januari 2016</p>
+
+              <p>De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen.</p>
+              <div>
+              <span><i class="fa fa-clock-o" aria-hidden="true"></i>5 min</span><span><i class="fa fa-heart" aria-hidden="true"></i>8</span>
+              </div>
+      </article>
+            <article>
+      <div class="categorielabel">Wereldbeeld</div>
+      <img src="images/freudiaansgrond.svg">
+      <div class="opslaan"></div>
+      <h2>Freudiaans</h2>
+      <p>18 januari 2016</p>
+
+      <p>De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen.</p>
+      <div>
+      <span><i class="fa fa-clock-o" aria-hidden="true"></i>5 min</span><span><i class="fa fa-heart" aria-hidden="true"></i>8</span>
+      </div>
+      </article>
+      </section>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>

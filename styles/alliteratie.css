@@ -1,0 +1,92 @@
+body {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: #fff;
+	font-family: "Segoe UI";
+	margin: 0 auto;
+	letter-spacing: 0.1em;
+    line-height: 2em;
+}
+
+img:not(.titel) {
+	width: 20em;
+	transition: 1s ease-out;
+}
+
+img:hover {
+	animation: shake 1s;
+}
+
+@keyframes shake{
+	0%, 90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  	40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.wrapper {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 1em;
+}
+
+@media (min-width: 700px) {
+	main { 
+		display: flex;
+    	flex-wrap: wrap;
+	}
+
+	.titel {
+		height: 55em;
+	}
+
+	.wrapper {
+		width: 20em;
+    	margin: 0 auto;
+    	padding: 2em;
+    	justify-content: flex-start;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	p {
+		font-size: 1.3em;
+	}
+
+	.wrapper {
+		display: block;
+	    justify-content: flex-start;
+	    margin: 6em;
+	    flex-direction: row;
+	    align-content: flex-end;
+	    align-items: center;
+	    padding: 0;
+	}
+
+	.titel {
+		height: 75em;
+	}
+
+	img:not(.titel) {
+		width: 26em;
+	}
+}

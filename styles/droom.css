@@ -1,0 +1,120 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  
+}
+body {
+  background-color: black;
+  position: relative;
+}
+#starfield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #000;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+  margin-top: 2em;
+}
+
+p {
+  min-width: 20em;
+  max-width: 32em;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  font-family: "Open sans", Arial, sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 0.5em;
+  line-height: 2em;
+  margin: 2em;
+}
+
+p:nth-of-type(even) {
+  -moz-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+p:nth-of-type(odd) {
+  -moz-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+
+h1 {
+  margin-top: 20%;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 48px/normal  "Warnes", Helvetica, sans-serif;
+  font-size: 4em;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+h1:hover {
+  color: grey;
+  text-shadow: none;
+}
+
+@media (min-width: 30em) {
+  section {
+    display: block;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  h1 {
+    position: fixed;
+    z-index: 10;
+    margin: 50% 0 50% 2em;
+  }
+
+  article {
+    align-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 25em) {
+  h1 {
+    margin: 50% 0 50% 0;
+  }
+}
+
+@media (min-width: 70em) {
+  h1 {
+    font-size: 8em;
+  }
+}

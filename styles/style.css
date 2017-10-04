@@ -1,0 +1,518 @@
+/* DFDS font */
+@font-face {
+  font-family: 'DFDS';
+  font-style: normal;
+  font-weight: 400;
+  src: local('DFDS Light'),
+       url('fonts/dfds-light.woff') format('woff'),
+       url('fonts/dfds-light.ttf') format('ttf'),
+       url('fonts/dfds-light.eot') format('eot');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+ 
+@font-face {
+  font-family: 'DFDS';
+  font-style: normal;
+  font-weight: 700;
+  src: local('DFDS Bold'),
+       url('fonts/dfds-bold.woff') format('woff'),
+       url('fonts/dfds-bold.ttf') format('ttf'),
+       url('fonts/dfds-bold.eot') format('eot');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+	font-family:  "Segoe UI","Lucida Grande","Helvetica Neue",Arial,sans-serif;
+	background-color: #eaedee;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #ffffff;
+	padding: 2px;
+}
+
+nav ul li:first-of-type {
+	display: none;
+}
+
+nav ul li:nth-child(2n) {
+	font-size: 1.5em;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+}
+
+header nav div {
+	flex: 1;
+}
+
+header img {
+	width: 6em;
+}
+
+header img+p {
+	display: none;
+}
+
+#inlogmenu {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#inlogmenu li a{
+	color: #0f2e45;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+#inlogmenu li {
+	list-style-type: none;
+	margin: 2px;
+}
+
+main {
+	margin-top: 1em;
+}
+
+main header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sorteerform {
+	margin: 1em;
+	font-size: 1em;
+	font-size: 0.9em;
+    text-align: right;
+}
+
+.sorteerform select {
+	background-color: #ffffff;
+}
+
+form button {
+	width: 28px;
+	height: 26px;
+	border: 0;
+	background-color: #ffffff;
+}
+
+.zoekContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#zoekBalk {
+	overflow: hidden;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    flex-grow: 1;
+    transition: 1s;
+}
+
+#zoekBalk span:after {
+	content: " ";
+	height: 1.5em;
+    width: 1.5em;
+    margin-top: 8px; 
+	background: url(/dfds/images/kruisjewit.svg) center no-repeat;
+}
+
+#zoekBalk span:nth-child(odd) {
+	background: #005184;
+}
+
+#searchQueryContainer {
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding: 2px;
+	flex-grow: 0;
+	max-width: 53.75rem;
+}
+
+#searchQueryContainer span {
+	height: 1.3em;
+    padding: 0px 0px 4px 12px;
+    margin: 3px;
+    background-color: #d13881;
+    border-radius: 0.8em;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    transition: 1s;
+    cursor: pointer;
+    width: 10em;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+
+.zoekIcoon {
+	width: 1.3em;
+    min-width: 1.5em;
+    max-width: 1.8em;
+    height: 1.3em;
+    margin-right: 6px;
+    background: url(/dfds/images/search.svg) center no-repeat;
+    flex-grow: 0;
+    transition: ease-out 0.3s;
+    z-index: 4;
+}
+
+.zoekIcoon.kruis {
+	background: url(/dfds/images/kruisje.svg) center no-repeat;
+	transition: ease-out 0.3s;
+}
+
+input[type=search] {
+	border: none;
+    outline: none;
+    width: 0px;
+    display: inline-block;
+    flex-grow: 1;
+    color: #000000;
+    padding-top: 0.2rem;
+}
+
+div.zoekmenu.ingeklapt {
+	display: none;
+}
+
+div.zoekmenu {
+	background: #112c42;
+	display: flex;
+	height: 40em;
+	z-index: 1;
+	width: 100%;
+	margin-top: 5px;
+	transition: 1s ease-out;
+}	
+
+div.zoekmenu fieldset {
+	border: none;
+	color: #ffffff;
+}
+
+div.zoekmenu legend {
+	font-weight: 800;
+    text-transform: uppercase;
+	font-family:"DFDS";
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+.zoekmenu form {
+	width: 22em;
+    margin: 0 auto;
+}
+
+.zoekmenu fieldset label {
+	display: block;
+	font-size: 1.3em;
+}
+
+.zoekmenu fieldset label span {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    background: #ffffff;
+    float: right;
+}
+
+.zoekmenu fieldset label input[type="checkbox"]:checked + span {
+    background: url("/dfds/images/checkboxcheck.svg") center no-repeat #d1d1d1;
+}
+
+.zoekmenu fieldset label:hover input[type="checkbox"] + span {
+    background: url("/dfds/images/checkboxcheckweg.svg") center no-repeat #ffffff;
+}
+
+.zoekmenu fieldset label:hover input[type="checkbox"]:checked + span {
+    background: url("/dfds/images/checkboxcheckhover.svg") center no-repeat #d1d1d1;
+}
+
+.categorielabel {
+	background-color: #005184;
+	font-family: "DFDS";
+	font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+	color: #ffffff;
+    padding: .7em;
+    margin: 0;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000%; 
+    transform: rotate(90deg) translateX(16px); 
+    transform-origin: 1.8em .5em;
+    transition: 0.3 ease-out;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+section {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+
+article {
+	background-color: #ffffff;
+	margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+article:first-of-type {
+		margin-bottom: 1em;
+}
+
+article div:last-of-type {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.articlewrapper {
+	display: flex;
+    flex-direction: column;
+}
+
+section img {
+	width: 100%;
+    margin-top: 0;
+}
+
+h2 {
+	width: 100%;
+	margin: 1em 0 0 -1em;
+}
+
+h1, h2 {
+	font-family: "DFDS";
+	text-transform: uppercase;
+}
+
+h1, h1 + p {
+	margin: 0;
+	width: 100%;
+}
+
+article h2, article p, article i, article div:last-of-type {
+    -webkit-transform: 	translateX(3em) translateY(-0.5em);
+    -moz-transform: 	translateX(3em) translateY(-0.5em);
+    -ms-transform: 		translateX(3em) translateY(-0.5em);
+    -o-transform: 		translateX(3em) translateY(-0.5em);
+    transform: 			translateX(3em) translateY(-0.5em); 
+    width: 84%; 
+}
+
+article h2+p {
+	margin: 0;
+    color: grey;
+    font-style: italic;
+}
+
+article p:nth-of-type(2n) {
+	margin: 2em 0;
+}
+
+div + i {
+	display: none;
+}
+
+article span {
+	margin: 3px;
+	display: inline;
+	color: #d13981;
+}
+
+.fa-clock-o, .fa-heart {
+	display: inline;
+	margin: 4px;
+}
+
+video {
+	display: none;
+}
+
+.opslaan {
+	width: 2.6em;
+	height: 2.6em;
+	background: url('/dfds/images/opslaanvoor.svg') no-repeat;
+	position: absolute;
+	left: 91%;
+}
+
+.opslaan:hover {
+	background: url('/dfds/images/opslaanna.svg') no-repeat
+}
+
+.menuweg {
+	display: none;
+}
+
+@media (min-width: 29em) {
+
+	article:first-of-type.opslaan {
+		left: 92%;
+	}
+
+	nav ul li:nth-child(2n) {
+		margin: 0 1em;
+    	font-size: 1.3em;
+	}
+
+	nav ul li:first-of-type {
+		display: block;
+	}
+
+	section img {
+		margin-top: 2em;
+	}
+
+	.categorielabel {
+		transform: none; 
+	}
+
+}
+
+@media (min-width: 37em) {
+
+	.menuweg {
+		background:url('/dfds/images/sluit.svg') center no-repeat;
+		width: 100%;
+    	height: 7em;
+   		position: relative;
+   		display:block;
+	}
+
+	article h2, article p, article i {
+		transform: translateX(2em);
+    	width: 82%;
+    	padding: 0;
+	}
+
+	article:first-of-type {
+		width: 100%;
+	}
+
+	article:first-of-type .opslaan{
+		left: 96%;
+	}
+
+	article {
+		width: 48%;
+	}
+
+	article img {
+		margin-top: 2em;
+    	width: 100%;
+	}
+
+	video {
+		width: 100%;
+    	z-index: -1;
+    	position: absolute;
+    	background-size: cover;
+    	display: block;
+	}
+
+	main header {
+		height: 16em;
+		margin-top: -2em;
+    	background-color: transparent;
+    	background-size: cover;
+   		position: relative;
+    	overflow: hidden;
+    	z-index: 1;
+    	display: block;
+	}
+
+	.zoekContainer {
+		width: 70%;
+		top: 50%;
+    	position: relative;
+    	display: block;
+	}
+
+	div.zoekmenu {
+		height: 15em;
+		width: 100%;
+		background-color: #ffffff;
+		display: block;
+	}
+
+	div.zoekmenu legend {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		color: #112c42
+	}
+
+	div.zoekmenu form {
+		display: flex;
+		width: 90%;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+
+	div.zoekmenu label {
+		color: #112c42
+	}
+
+	div.zoekmenu label span {
+		background-color: #112c42
+	}
+
+	div.zoekmenu fieldset {
+		width: 20em;
+		margin-top: 1em;
+	}
+
+}
+
+@media (min-width: 60em) {
+
+	main header {
+		height: 25em;
+	}
+}

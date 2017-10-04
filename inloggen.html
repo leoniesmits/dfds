@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Log in</title>
+    <link rel="stylesheet" href="styles/inloggen.css">
+    <script src="https://use.fontawesome.com/e41dfdb918.js"></script>
+</head>
+<body>
+	<main>
+		<ul>
+			<li class="active"><a href="#login">Log in</a></li>
+	        <li><a href="#registreer">Registreer</a></li>
+	    </ul>
+
+	<form class="login" method="post">
+	  <fieldset>
+	    <legend>Welkom terug!</legend>
+
+	    <div class="input-wrap">
+	    <label for="email">e-mailadres<span class="req">*</span></label>
+	    <i class="fa fa-check" aria-hidden="true"></i>
+	      <input type="email"
+	      	id="email"
+	        name="email"
+	        autocomplete="email"
+	        required>
+	    </div>
+
+	    <div class="input-wrap">
+      	<label for="password">wachtwoord<span class="req">*</span></label>
+      	<i class="fa fa-check" aria-hidden="true"></i>
+	      <input  type="password"
+	      	id="password"
+	        name="password"
+	        required>
+	    </div>
+	    <p class="forgot"><a href="#">Wachtwoord vergeten?</a></p>
+
+      <button type="submit">Inloggen</button>
+	    
+	  </fieldset>
+	</form>
+
+	<form class="registreer hidden" method="post">
+	  <fieldset>
+	    <legend>Maak een gratis account aan</legend>
+
+	    <div class="input-wrap">
+	    <label for="registreer-email">e-mailadres<span class="req">*</span></label>
+	    <i class="fa fa-check" aria-hidden="true"></i>
+	      <input type="email" 
+	      	id="registreer-email"
+	      	type="text"
+	        name="email"
+	        autocomplete="off"
+	        required>
+	    </div>
+
+	    <div class="input-wrap">
+      	<label for="registreer-password">wachtwoord<span class="req">*</span></label>
+      	<i class="fa fa-check" aria-hidden="true"></i>
+	      <input type="password"
+	        name="password"
+	        id="registreer-password"
+	        required>
+	    </div>
+
+	    <div class="input-wrap">
+      	<label for="confirm-password">bevestig wachtwoord<span class="req">*</span></label>
+      	<i class="fa fa-check" aria-hidden="true"></i>
+	      <input type="password"
+	        name="confirm-password"
+	        id="confirm-password"
+	        required>
+	    </div>
+	    <button type="submit">Registreren</button>
+	   </fieldset>
+	   </form>
+	   <script src="js/inloggen.js"></script>
+	</main>
+</body>
+</html>
+
